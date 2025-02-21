@@ -1,0 +1,25 @@
+site_name: gcp-helper
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: 'overview.md'
+  - BigQuery: 'bigquery.md'
+  - BigTable: 'bigtable.md'
+  - Kubernetes: 'kubernetes.md'
+  - Redis (MemoryStore): 'redis.md'
+  - Google Cloud Storage: 'storage.md'
+  - Utils: 'utils.md'
+
+theme:
+  name: material
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
